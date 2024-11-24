@@ -1,0 +1,196 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font dan warna dasar */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #e7461d;
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #fa9980;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #e7461d;
+    color: #fa9980; 
+}
+
+/* Main section */
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+/* Article */
+article {
+    width: 60%;
+    background-color: #fa9980;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+article h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Aside */
+aside {
+    width: 30%;
+    background-color: #fa9980;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+aside h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+aside img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+aside a {
+    color: #000000;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fa9980;
+    margin-top: 2rem;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article, aside {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Style untuk Social Media Icons */
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+/* Pendidikan */
+.education-items {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.education-card {
+    background-color: #fa9980;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+}
+
+.education-card img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.education-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.education-card p {
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style untuk H1 */
+h1 {
+    font-size: 3rem;
+    color: #050505; 
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+h1:hover {
+    color: #e7461d;
+}
